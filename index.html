@@ -229,6 +229,16 @@
       color: var(--colour-label);
       letter-spacing: .04em;
     }
+  
+    /* Copyright line (college copies are self-contained, so inline) */
+    .site-copyright {
+      margin: 3rem auto 1.5rem;
+      padding: 0 1rem;
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--colour-label);
+      opacity: 0.8;
+    }
   </style>
 </head>
 
@@ -245,103 +255,30 @@
       </button>
     </div>
 
-    <div class="card intro">
-      Choose an exercise. Each one generates a random puzzle — build the output waveform, then press
-      <b>Check</b>. Most exercises also have an <b>Answers</b> button to show the solution before you start, and <b>New Diagram</b> gives a fresh puzzle.
-    </div>
 
     <div class="card topic-card">
-      <div class="topic-title">Flip-Flops</div>
-      <a class="exercise-link" href="./digital_flip_flop_nor_nad_college.html">
+      <div class="topic-title">Datasheets</div>
+      <a class="exercise-link" href="./datasheets.html">
         <span class="exercise-icon">⏚</span>
         <span class="exercise-text">
-          <span class="exercise-name">SR Latch Waveform Builder</span>
-          <span class="exercise-desc">NOR &amp; NAND · Build the Q Output</span>
-        </span>
-      </a>
-      <a class="exercise-link" href="./digital_dtype_preset_clear_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">D Flip-Flop Waveform Builder</span>
-          <span class="exercise-desc">PRESET/CLEAR · Build the Q Output</span>
-        </span>
-      </a>
-      <a class="exercise-link" href="./digital_jk_preset_clear_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">J-K Flip-Flop Waveform Builder</span>
-          <span class="exercise-desc">PRESET/CLEAR · Build the Q Output</span>
+          <span class="exercise-name">Datasheets for components used in the course</span>
+          <span class="exercise-desc">Link to the Texas Instruments official datasheets</span>
         </span>
       </a>
     </div>
-
+    
     <div class="card topic-card">
-      <div class="topic-title">Multivibrators</div>
-      <a class="exercise-link" href="./digital_monostable_timing_diagram_college.html">
+      <div class="topic-title">Exercises</div>
+      <a class="exercise-link" href="./exercises.html">
         <span class="exercise-icon">⏚</span>
         <span class="exercise-text">
-          <span class="exercise-name">Monostable Timing Diagram Builder</span>
-          <span class="exercise-desc">Retriggerable &amp; Non-Retriggerable · Build the Q Output</span>
-        </span>
-      </a>
-    </div>
-
-    <div class="card topic-card">
-      <div class="topic-title">Counters</div>
-      <a class="exercise-link" href="./digital_counter_timing_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">Counter Timing Diagram Builder</span>
-          <span class="exercise-desc">Up &amp; Down · Either Clock Edge · Build Q₀–Q₂</span>
-        </span>
-      </a>
-    </div>
-
-    <div class="card topic-card">
-      <div class="topic-title">Shift Registers</div>
-      <a class="exercise-link" href="./digital_shift_register_timing_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">Shift Register Timing Diagram Builder</span>
-          <span class="exercise-desc">Shift Left &amp; Right · Either Clock Edge · Build Q₀–Q₃</span>
-        </span>
-      </a>
-    </div>
-
-    <div class="card topic-card">
-      <div class="topic-title">Encoders &amp; Decoders</div>
-      <a class="exercise-link" href="./digital_decoder_timing_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">Decoder Timing Diagram Builder</span>
-          <span class="exercise-desc">Enable &amp; Output Polarity · Build Y₀–Y₃</span>
-        </span>
-      </a>
-    </div>
-
-    <div class="card topic-card">
-      <div class="topic-title">Multiplexers</div>
-      <a class="exercise-link" href="./digital_multiplexer_timing_diagram_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">Multiplexer Timing Diagram Builder</span>
-          <span class="exercise-desc">4-Input &amp; 2-Input · Z and Z̄ · Follow the Selected Input</span>
-        </span>
-      </a>
-    </div>
-
-    <div class="card topic-card">
-      <div class="topic-title">Analogue &amp; Digital Converters</div>
-      <a class="exercise-link" href="./digital_adc_output_builder_college.html">
-        <span class="exercise-icon">⏚</span>
-        <span class="exercise-text">
-          <span class="exercise-name">ADC Output Builder</span>
-          <span class="exercise-desc">3-Bit &amp; 4-Bit · Round vs Truncate · Build D₀–D₃</span>
+          <span class="exercise-name">Interactive Exercises</span>
+          <span class="exercise-desc">Flip-Flops, Counters, Shift Registers, and more</span>
         </span>
       </a>
     </div>
   </div>
-
+  
   <footer>Electronics // Cert III // UEEEC0069</footer>
 
   <script>
@@ -367,6 +304,7 @@
       updateThemeToggleUI(isDark);
     })();
   </script>
+  <p class="site-copyright">&copy; 2026 Anderson Home Technology. All rights reserved.</p>
 </body>
 
 </html>
